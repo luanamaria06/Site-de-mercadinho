@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+:root{
+    --cor0: #F2B705; /* Cor do header*/
+    --cor1: #B7F238; /* Cor dos icones do header*/
+    --cor2: #D39202; /* Cor do botão de adicionar e das setas do carrossel de compras*/
+    --cor3: #00FF1A; /* Cor retangulo das promoções*/
+}
+
+
+*{
+    font-family: "Ubuntu Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--cor0); /*Exemplo de como fazer, só colocar o nome var que o vscode já completa e dar as opções*/
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 150px;
+    padding-top: 60px;
+}
+
+header img {
+    height: 150px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px 40px 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: var(--cor0);
+    border: 1px solid var(--cor2);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.login-btn, .cart-btn {
+    padding: 10px 20px;
+    background-color: #fdfdfd;
+    border: 1px solid #fff5f5;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.cart-btn {
+    border: 1px solid var(--cor2);
+}
+
+.menu {
+    background-color: var(--cor0);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.menu a{
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu a::after{
+    content: '';
+    position: absolute;
+    background-color: #3494cc;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.menu a:hover::after{
+    width: 100%;
+}
+
+.search-bar .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}

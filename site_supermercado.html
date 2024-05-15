@@ -1,130 +1,46 @@
-<html>
-    <head>
-        <title>site do supermercado</title>
-        <link rel="stylesheet" href="css_supermercado.css">
-    <body>
-
-        <title>Mercadinho do Seu Zé</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #F2B705;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-        .logo {
-            position: absolute;
-            left: 150px;
-        }
-        header img {
-            height: 110px;
-        }
-        .search-bar {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-        }
-        .search-bar input[type="text"] {
-            padding: 10px 40px 10px 20px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 20px;
-            width: 300px;
-            margin-right: 10px;
-        }
-        .search-bar button {
-            padding: 10px 20px;
-            background-color: #F2B705;
-            border: 1px solid #a86103;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-right: 10px;
-        }
-        .login-btn, .cart-btn {
-            padding: 10px 20px;
-            background-color: #fdfdfd;
-            border: 1px solid #fff5f5;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-            text-decoration: none;
-            color: black;
-            display: flex;
-            align-items: center;
-        }
-        .cart-btn {
-            border: 1px solid #ad7600;
-        }
-        .menu {
-            background-color: #F2B705;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-        }
-        .menu a {
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        .menu a:hover {
-            background-color: #3494cc;
-        }
-        .search-bar .icon {
-            position: absolute;
-            left: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            pointer-events: none;
-        }
-    </style>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compre Fácil</title>
+    <link rel="stylesheet" href="supermercado.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
-
-<header>
-    <div class="logo">
-        <img src="C:\Users\Desktop\Downloads\WhatsApp_Image_2024-05-14_at_14.53.35-removebg-preview.png" alt="Logo do Mercadinho do Seu Zé">
+    <header>
+        <div class="logo">
+            <a href="site_supermercado.html"><img src="imagens/62_Sem_Título_20240508093747-removebg-preview.png" alt="Logo do Mercadinho do Seu Zé"></a>
+        </div>
+        <div class="search-bar">
+            <span class="icon">🔍</span> 
+            <input type="text" placeholder="   Buscar produtos">
+            <button>Buscar</button>
+            <a href="Paginadelogin.html" class="login-btn">Entre ou Cadastre-se</a>
+            <button class="cart-btn">🛒</button>
+        </div>
+    </header>
+    
+    <div class="menu">
+        <a href="#">Ofertas 🔥</a>
+        <a href="#">Limpeza 🧽</a>
+        <a href="#">Higiene 🧼</a>
+        <a href="#">Carnes e Aves 🍖</a>
+        <a href="#">Frios ❄️</a>
+        <a href="#">Frutas 🍇</a>
+        <a href="#">Legumes e verduras 🥕</a>
+        <a href="#">Bebidas 🥂</a>
     </div>
-    <div class="search-bar">
-        <span class="icon">🔍</span> 
-        <input type="text" placeholder="   Buscar produtos">
-        <button>Buscar</button>
-        <a href="Paginadelogin.html" class="login-btn">Entre ou Cadastre-se</a>
-        <button class="cart-btn">🛒</button>
+    
+    <!-- Banner Section -->
+    <div style="background-color: #b98c04; padding: 0px; text-align: center;">
     </div>
-</header>
-
-<div class="menu">
-    <a href="#">Ofertas🔥</a>
-    <a href="#">Limpeza🧽</a>
-    <a href="#">Higiene🧼</a>
-    <a href="#">Carnes e Aves🍖</a>
-    <a href="#">Frios❄️</a>
-    <a href="#">Frutas🍇</a>
-    <a href="#">Legumes🥕</a>
-    <a href="#">Bebidas🥂</a>
-</div>
-
-<!-- Banner Section -->
-<div style="background-color: #b98c04; padding: 0px; text-align: center;">
-</div>
-
-<script>
-    document.querySelector('.search-bar button').addEventListener('click', function() {
-        alert('Sem itens no catalogo tente novamente mais tarde :D'); // Esta é uma mensagem de exemplo. Substitua pela funcionalidade real.
-    });
-</script>
-
+    
+    <script>
+        document.querySelector('.search-bar button').addEventListener('click', function() {
+            alert('Sem itens no catalogo tente novamente mais tarde :D'); // Esta é uma mensagem de exemplo. Substitua pela funcionalidade real.
+        });
+    </script>
+    
 </body>
 </html>
