@@ -6,6 +6,7 @@
     <title>Compre Fácil</title>
     <link rel="stylesheet" href="supermercado.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.min.css">
 </head>
 <body>
     <header>
@@ -35,12 +36,15 @@
     <!-- Banner Section -->
     <div style="background-color: #b98c04; padding: 0px; text-align: center;">
     </div>
-    
-    <script>
-        document.querySelector('.search-bar button').addEventListener('click', function() {
-            alert('Sem itens no catalogo tente novamente mais tarde :D'); // Esta é uma mensagem de exemplo. Substitua pela funcionalidade real.
-        });
-    </script>
-    
+    <div class="container-slider">
+        <button id="prev-button"><i class="fa-solid fa-arrow-left fa-2xl" style="color: #D39202;"></i></button>
+        <div class="container-images">
+          <img src="imagens/banner1.jpg" alt="banner1" class="slider on">
+          <img src="imagens/banner2.jpg" alt="banner2" class="slider">
+        </div>
+        <button id="next-button"><i class="fa-solid fa-arrow-right fa-2xl" style="color: #D39202;"></i></button>
+      </div>
+    <script src="script.js"></script>
+      
 </body>
 </html>
