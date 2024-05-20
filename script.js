@@ -1,40 +1,36 @@
 const slider = document.querySelectorAll('.slider');
 const btnPrev = document.getElementById('prev-button');
 const btnNext = document.getElementById('next-button');
+const searchBarButton = document.querySelector('.search-bar button'); // Armazenar o botão da barra de pesquisa
 
 let currentSlide = 0;
 
-function hideSlider() {
-  slider.forEach(item => item.classList.remove('on'))
-}
+// Esconde todos os slides
+const hideSlider = () => slider.forEach(item => item.classList.remove('on'));
 
-function showSlider() {
-  slider[currentSlide].classList.add('on')
-}
+// Mostra o slide atual
+const showSlider = () => {
+  slider[currentSlide].classList.add('on');
+};
 
-function nextSlider() {
-  hideSlider()
-  if(currentSlide === slider.length -1) {
-    currentSlide = 0
-  } else {
-    currentSlide++
-  }
-  showSlider()
-}
+// Avança para o próximo slide
+const nextSlider = () => {
+  hideSlider();
+  currentSlide = (currentSlide + 1) % slider.length; // Simplifica a lógica para avançar o slide
+  showSlider();
+};
 
-function prevSlider() {
-  hideSlider()
-  if(currentSlide === 0) {
-    currentSlide = slider.length -1
-  } else {
-    currentSlide--
-  }
-  showSlider()
-}
+// Retorna ao slide anterior
+const prevSlider = () => {
+  hideSlider();
+  currentSlide = (currentSlide - 1 + slider.length) % slider.length; // Simplifica a lógica para retornar o slide
+  showSlider();
+};
 
-btnNext.addEventListener('click', nextSlider)
-btnPrev.addEventListener('click', prevSlider)
+btnNext.addEventListener('click', nextSlider);
+btnPrev.addEventListener('click', prevSlider);
 
-document.querySelector('.search-bar button').addEventListener('click', function() {
-    alert('Sem itens no catalogo tente novamente mais tarde :D'); // Esta é uma mensagem de exemplo. Substitua pela funcionalidade real.
+// Adiciona funcionalidade ao botão da barra de pesquisa
+searchBarButton.addEventListener('click', () => {
+    alert('Sem itens no catálogo. Tente novamente mais tarde :D'); // Mensagem de placeholder
 });
