@@ -38,3 +38,23 @@ btnPrev.addEventListener('click', prevSlider)
 document.querySelector('.search-bar button').addEventListener('click', function() {
     alert('Sem itens no catalogo tente novamente mais tarde :D'); // Esta é uma mensagem de exemplo. Substitua pela funcionalidade real.
 });
+
+function signup() {
+    const fullName = document.getElementById('fullName').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const cpf = document.getElementById('cpf').value;
+    
+    if (fullName && email && phone && cpf) {
+        document.querySelector('.signup-container').style.display = 'none';
+        document.querySelector('.loading-container').style.display = 'flex';
+        
+        setTimeout(() => {
+            alert(`Cadastro realizado! Boas compras`);
+            window.location.href = "site_supemercado.html"; 
+        }, 3000); // Simula um carregamento de 3 segundos
+    } else {
+        alert('Por favor, preencha todos os campos.');
+    }
+}
+
