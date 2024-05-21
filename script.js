@@ -34,3 +34,31 @@ btnPrev.addEventListener('click', prevSlider);
 searchBarButton.addEventListener('click', () => {
     alert('Sem itens no catálogo. Tente novamente mais tarde :D'); // Mensagem de placeholder
 });
+
+// Novas linhas para o segundo carrossel
+const slider2 = document.querySelectorAll('.slider-2'); // Use a classe correta para os slides do segundo carrossel
+const btnPrev2 = document.getElementById('prev-button-2');
+const btnNext2 = document.getElementById('next-button-2');
+
+let currentSlide2 = 0;
+
+const hideSlider2 = () => slider2.forEach(item => item.classList.remove('on'));
+const showSlider2 = () => {
+  slider2[currentSlide2].classList.add('on');
+};
+
+const nextSlider2 = () => {
+  hideSlider2();
+  currentSlide2 = (currentSlide2 + 1) % slider2.length;
+  showSlider2();
+};
+
+const prevSlider2 = () => {
+  hideSlider2();
+  currentSlide2 = (currentSlide2 - 1 + slider2.length) % slider2.length;
+  showSlider2();
+};
+
+btnNext2.addEventListener('click', nextSlider2);
+btnPrev2.addEventListener('click', prevSlider2);
+
