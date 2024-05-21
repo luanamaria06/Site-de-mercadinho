@@ -54,18 +54,7 @@ body {
     font-size: 16px;
     color: #fff;
 }
-.google-btn {
-    background-color: #dd4b39;
-}
-.google-btn:hover {
-    background-color: #c1442c;
-}
-.facebook-btn {
-    background-color: #3b5998;
-}
-.facebook-btn:hover {
-    background-color: #334d84;
-}
+
 .signup-link {
     margin-top: 20px;
     color: #333;
