@@ -56,7 +56,7 @@ function signup() {
     } else {
         alert('Por favor, preencha todos os campos.');
     }
-}
+
 
 function login() {
     const email = document.getElementById('email').value;
