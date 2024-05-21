@@ -57,7 +57,7 @@ const prevSlider2 = () => {
 
 btnNext2.addEventListener('click', nextSlider2);
 btnPrev2.addEventListener('click', prevSlider2);
-=======
+
 function signup() {
     const fullName = document.getElementById('fullName').value;
     const email = document.getElementById('email').value;
@@ -83,4 +83,4 @@ function login() {
     alert(`Login com email: ${email} e senha: ${password}`);
 }
 
-
+}
