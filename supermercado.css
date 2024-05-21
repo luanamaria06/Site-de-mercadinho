@@ -161,10 +161,7 @@ header img {
     cursor: pointer;
   }
   
-  #prev-button img, #next-button img {
-    width: 100%;
-    height: 100%;
-  }
+
 
   .link-img{
     display: flex;
@@ -179,97 +176,54 @@ header img {
     font-style: italic;
   }
 
- /* Estilos para o segundo carrossel */
- .container-slider-2 {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     overflow: hidden; 
- }
- 
- .container-images-2 {
-     display: flex;
-     transition: transform 0.5s ease;
- }
- 
- .link-img-2 {
-     flex: 0 0 33.333%; 
-     box-sizing: border-box;
-     padding: 10px; 
- }
- 
- .slider-2 img {
-     width: 80%; 
-     height: auto; 
-     border-radius: 10px; 
- }
- /* Ajustes para o segundo carrossel */
- .container-images-2 .slider-2 {
-     display: none; 
-     position: center; 
-     width: 80%; 
- }
- 
- .container-images-2 .slider-2.on {
-     display: block; 
- }
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+}
 
- /* Estilos Gerais para dispositivos móveis */
- @media screen and (max-width: 768px) {
-     header {
-         flex-direction: column;
-         padding: 10px;
-     }
- 
-     .logo {
-         left: 50%;
-         transform: translateX(-50%);
-         padding-top: 20px;
-     }
- 
-     .search-bar input[type="text"] {
-         width: 250px; /* Reduzir a largura do campo de busca */
-     }
- 
-     .menu {
-         flex-direction: column;
-     }
- 
-     .menu a {
-         padding: 10px 0; /* Aumentar o espaçamento para toque */
-     }
- 
-     .container-slider, .container-slider-2 {
-         flex-direction: column;
-     }
- 
-     .container-images, .link-img, .container-images-2, .link-img-2 {
-         width: 100%; /* Ajustar a largura para a do dispositivo */
-     }
- }
- 
- /* Estilos para telas muito pequenas, como smartphones */
- @media screen and (max-width: 480px) {
-     .search-bar input[type="text"] {
-         width: 200px; /* Reduzir ainda mais a largura do campo de busca */
-     }
- 
-     .logo {
-         padding-top: 10px;
-     }
- 
-     .menu a {
-         font-size: 14px; /* Diminuir o tamanho da fonte para economizar espaço */
-     }
- 
-     .container-images, .link-img, .container-images-2, .link-img-2 {
-         flex-direction: column;
-     }
- }
- 
- /* Estilos para telas de alta resolução */
- @media screen and (min-width: 1920px) {
-     .container-images, .link-img, .container-images-2, .link-img-2 {
-         width: 80%; /* Limitar a largura máxima para evitar que fique muito esticado */
-     }
- }
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 25%; /* Cada item ocupa 25% da largura do container para que 4 itens sejam exibidos por vez */
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-container {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 80%; /* Ajuste a largura conforme necessário */
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 25%; /* Cada item ocupa 25% da largura do container para que 4 itens sejam exibidos por vez */
+}
+
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
+}
+
+#prevBtn i, #nextBtn i {
+    color: #D39202; /* Cor dos ícones */
+}
