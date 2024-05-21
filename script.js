@@ -1,3 +1,5 @@
+//Primeiro carrossel
+
 const slider = document.querySelectorAll('.slider');
 const btnPrev = document.getElementById('prev-button');
 const btnNext = document.getElementById('next-button');
@@ -31,32 +33,51 @@ searchBarButton.addEventListener('click', () => {
     alert('Sem itens no catálogo. Tente novamente mais tarde :D'); // Mensagem de placeholder
 });
 
-//segudo carrossel
-const slider2 = document.querySelectorAll('.slider-2'); 
-const btnPrev2 = document.getElementById('prev-button-2');
-const btnNext2 = document.getElementById('next-button-2');
+//Segundo carrossel
 
-let currentSlide2 = 0;
+document.addEventListener('DOMContentLoaded', function() {
+    const slideWidth = document.querySelector('.carousel-item').clientWidth; // Largura de um item
+    const carouselSlide = document.querySelector('.carousel-slide');
+    const slides = document.querySelectorAll('.carousel-item');
+    let index = 0;
+    const totalSlides = slides.length;
+    const visibleSlides = 4; // Número de slides visíveis
+    const moveSlides = 2; // Número de slides para mover
+    const maxIndex = totalSlides - visibleSlides; // Índice máximo para não exceder o número de slides
 
-const hideSlider2 = () => slider2.forEach(item => item.classList.remove('on'));
-const showSlider2 = () => {
-  slider2[currentSlide2].classList.add('on');
-};
+    // Botões
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
 
-const nextSlider2 = () => {
-  hideSlider2();
-  currentSlide2 = (currentSlide2 + 1) % slider2.length;
-  showSlider2();
-};
+    // Mover para o próximo slide
+    nextBtn.addEventListener('click', () => {
+        if (index < maxIndex) {
+            index += moveSlides;
+            if (index > maxIndex) {
+                index = 0; // Volta ao início se exceder o número total de slides
+            }
+        } else {
+            index = 0; // Volta ao início se estiver no último slide visível
+        }
+        carouselSlide.style.transform = 'translateX(' + (-slideWidth * index) + 'px)';
+    });
 
-const prevSlider2 = () => {
-  hideSlider2();
-  currentSlide2 = (currentSlide2 - 1 + slider2.length) % slider2.length;
-  showSlider2();
-};
+    // Mover para o slide anterior
+    prevBtn.addEventListener('click', () => {
+        if (index > 0) {
+            index -= moveSlides;
+            if (index < 0) {
+                index = maxIndex; // Vai para o último conjunto de slides visíveis se o índice for negativo
+            }
+        } else {
+            index = maxIndex; // Vai para o último conjunto de slides visíveis se estiver no primeiro slide
+        }
+        carouselSlide.style.transform = 'translateX(' + (-slideWidth * index) + 'px)';
+    });
+});
 
-btnNext2.addEventListener('click', nextSlider2);
-btnPrev2.addEventListener('click', prevSlider2);
+
+//Função do botão de cadastro
 
 function signup() {
     const fullName = document.getElementById('fullName').value;
