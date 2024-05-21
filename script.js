@@ -1,44 +1,63 @@
 const slider = document.querySelectorAll('.slider');
 const btnPrev = document.getElementById('prev-button');
 const btnNext = document.getElementById('next-button');
+const searchBarButton = document.querySelector('.search-bar button'); 
 
 let currentSlide = 0;
 
-function hideSlider() {
-  slider.forEach(item => item.classList.remove('on'))
-}
 
-function showSlider() {
-  slider[currentSlide].classList.add('on')
-}
+const hideSlider = () => slider.forEach(item => item.classList.remove('on'));
 
-function nextSlider() {
-  hideSlider()
-  if(currentSlide === slider.length -1) {
-    currentSlide = 0
-  } else {
-    currentSlide++
-  }
-  showSlider()
-}
+const showSlider = () => {
+  slider[currentSlide].classList.add('on');
+};
 
-function prevSlider() {
-  hideSlider()
-  if(currentSlide === 0) {
-    currentSlide = slider.length -1
-  } else {
-    currentSlide--
-  }
-  showSlider()
-}
+const nextSlider = () => {
+  hideSlider();
+  currentSlide = (currentSlide + 1) % slider.length; // Simplifica a lógica para avançar o slide
+  showSlider();
+};
 
-btnNext.addEventListener('click', nextSlider)
-btnPrev.addEventListener('click', prevSlider)
+const prevSlider = () => {
+  hideSlider();
+  currentSlide = (currentSlide - 1 + slider.length) % slider.length; 
+  showSlider();
+};
 
-document.querySelector('.search-bar button').addEventListener('click', function() {
-    alert('Sem itens no catalogo tente novamente mais tarde :D'); // Esta é uma mensagem de exemplo. Substitua pela funcionalidade real.
+btnNext.addEventListener('click', nextSlider);
+btnPrev.addEventListener('click', prevSlider);
+
+searchBarButton.addEventListener('click', () => {
+    alert('Sem itens no catálogo. Tente novamente mais tarde :D'); // Mensagem de placeholder
 });
 
+//segudo carrossel
+const slider2 = document.querySelectorAll('.slider-2'); 
+const btnPrev2 = document.getElementById('prev-button-2');
+const btnNext2 = document.getElementById('next-button-2');
+
+let currentSlide2 = 0;
+
+const hideSlider2 = () => slider2.forEach(item => item.classList.remove('on'));
+const showSlider2 = () => {
+  slider2[currentSlide2].classList.add('on');
+};
+
+const nextSlider2 = () => {
+  hideSlider2();
+  currentSlide2 = (currentSlide2 + 1) % slider2.length;
+  showSlider2();
+};
+
+const prevSlider2 = () => {
+  hideSlider2();
+  currentSlide2 = (currentSlide2 - 1 + slider2.length) % slider2.length;
+  showSlider2();
+};
+
+btnNext2.addEventListener('click', nextSlider2);
+btnPrev2.addEventListener('click', prevSlider2);
+=======
 function signup() {
     const fullName = document.getElementById('fullName').value;
     const email = document.getElementById('email').value;
@@ -63,4 +82,5 @@ function login() {
     const password = document.getElementById('password').value;
     alert(`Login com email: ${email} e senha: ${password}`);
 }
+
 
