@@ -170,7 +170,7 @@ header img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1600px;
+    max-width: 1300px;
   }
 
   .ofertas-meio{
@@ -199,7 +199,7 @@ header img {
  }
  
  .slider-2 img {
-     width: 100%; 
+     width: 80%; 
      height: auto; 
      border-radius: 10px; 
  }
@@ -207,9 +207,69 @@ header img {
  .container-images-2 .slider-2 {
      display: none; 
      position: center; 
-     width: 100%; 
+     width: 80%; 
  }
  
  .container-images-2 .slider-2.on {
      display: block; 
+ }
+
+ /* Estilos Gerais para dispositivos móveis */
+ @media screen and (max-width: 768px) {
+     header {
+         flex-direction: column;
+         padding: 10px;
+     }
+ 
+     .logo {
+         left: 50%;
+         transform: translateX(-50%);
+         padding-top: 20px;
+     }
+ 
+     .search-bar input[type="text"] {
+         width: 250px; /* Reduzir a largura do campo de busca */
+     }
+ 
+     .menu {
+         flex-direction: column;
+     }
+ 
+     .menu a {
+         padding: 10px 0; /* Aumentar o espaçamento para toque */
+     }
+ 
+     .container-slider, .container-slider-2 {
+         flex-direction: column;
+     }
+ 
+     .container-images, .link-img, .container-images-2, .link-img-2 {
+         width: 100%; /* Ajustar a largura para a do dispositivo */
+     }
+ }
+ 
+ /* Estilos para telas muito pequenas, como smartphones */
+ @media screen and (max-width: 480px) {
+     .search-bar input[type="text"] {
+         width: 200px; /* Reduzir ainda mais a largura do campo de busca */
+     }
+ 
+     .logo {
+         padding-top: 10px;
+     }
+ 
+     .menu a {
+         font-size: 14px; /* Diminuir o tamanho da fonte para economizar espaço */
+     }
+ 
+     .container-images, .link-img, .container-images-2, .link-img-2 {
+         flex-direction: column;
+     }
+ }
+ 
+ /* Estilos para telas de alta resolução */
+ @media screen and (min-width: 1920px) {
+     .container-images, .link-img, .container-images-2, .link-img-2 {
+         width: 80%; /* Limitar a largura máxima para evitar que fique muito esticado */
+     }
  }
