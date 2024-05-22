@@ -7,6 +7,7 @@
     --cor1: #B7F238; /* Cor dos icones do header*/
     --cor2: #D39202; /* Cor do botão de adicionar e das setas do carrossel de compras*/
     --cor3: #00FF1A; /* Cor retangulo das promoções*/
+    --cor4: #007319; /* Cor das letras em cima do carrossel*/ 
 }
 
 
@@ -178,15 +179,6 @@ header img {
     margin-bottom: 150px;
   }
 
-.carousel-container {
-    overflow: hidden;
-    width: 100%;
-}
-
-.carousel-slide {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
 
 .carousel-item {
     min-width: 25%; /* Cada item ocupa 25% da largura do container para que 4 itens sejam exibidos por vez */
@@ -204,9 +196,6 @@ header img {
     transition: transform 0.5s ease-in-out;
 }
 
-.carousel-item {
-    min-width: 25%; /* Cada item ocupa 25% da largura do container para que 4 itens sejam exibidos por vez */
-}
 
 #prevBtn, #nextBtn {
     position: absolute;
@@ -281,4 +270,154 @@ header img {
     align-items: center;
     margin-left: 30px;
     cursor: pointer;
+}
+
+
+.carousel-container-2 {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 80%; /* Ajuste a largura conforme necessário */
+}
+
+.carousel-slide-2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item-2 {
+    min-width: 25%;
+    transition: transform 0.5s ease-in-out;
+}
+
+#prevBtn-2, #nextBtn-2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#prevBtn-2 {
+    left: 0;
+}
+
+#nextBtn-2 {
+    right: 0;
+}
+
+#prevBtn-2 i, #nextBtn-2 i {
+    color: var(--cor2); /* Cor dos ícones */
+}
+
+.h3-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mostrar-mais{
+    width: 191px;
+    height: 45px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid var(--cor2);
+    border-radius: 8px;
+    color: var(--cor2);
+    box-shadow: 2px 2px 4px #00000042;
+    cursor: pointer;
+}
+
+h3 {
+    color: var(--cor4);
+    font-size: 20px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.carousel-container-3 {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 80%; /* Ajuste a largura conforme necessário */
+}
+
+.carousel-slide-3 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item-3 {
+    min-width: 25%;
+    transition: transform 0.5s ease-in-out;
+}
+
+#prevBtn-3, #nextBtn-3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#prevBtn-3 {
+    left: 0;
+}
+
+#nextBtn-3 {
+    right: 0;
+}
+
+#prevBtn-3 i, #nextBtn-3 i {
+    color: var(--cor2); /* Cor dos ícones */
+}
+
+.carousel-container-4 {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 80%; /* Ajuste a largura conforme necessário */
+}
+
+.carousel-slide-4 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item-4 {
+    min-width: 25%;
+    transition: transform 0.5s ease-in-out;
+}
+
+#prevBtn-4, #nextBtn-4 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#prevBtn-4{
+    left: 0;
+}
+
+#nextBtn-4 {
+    right: 0;
+}
+
+#prevBtn-4 i, #nextBtn-4 i {
+    color: var(--cor2); /* Cor dos ícones */
 }
