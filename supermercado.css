@@ -421,3 +421,42 @@ h3 {
 #prevBtn-4 i, #nextBtn-4 i {
     color: var(--cor2); /* Cor dos ícones */
 }
+
+
+footer {
+    background-color: var(--cor0); /* Substitua --cor0 pela cor desejada */
+    color: black;
+    padding: 20px;
+    text-align: start;
+    height: 268px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.footer-container div {
+    margin: 10px;
+}
+
+.atendimento a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-container h3 {
+    margin-bottom: 10px;
+}
+
+.redes-sociais a {
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.redes-sociais i {
+    margin-right: 5px;
+}
