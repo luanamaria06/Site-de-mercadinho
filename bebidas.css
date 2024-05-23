@@ -334,7 +334,7 @@
     }
 
     h3 {
-        color: var(--cor4);
+        color: var(--cor2);
         font-size: 20px;
         margin-top: 80px;
         margin-bottom: 20px;
@@ -463,5 +463,8 @@
 
     .home-arrow{
         text-decoration: none;
-        color: var(--cor4);
+        color: var(--cor2);
+    }
+    .teste-margin{
+        margin-top: 50px;
     }
