@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compre Fácil</title>
+    <link rel="stylesheet" href="supermercado.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.min.css">
+    <style>
+        /* Estilo adicional para centralizar e afastar o título "LIMPEZA" do menu */
+        .ofertas-meio {
+            text-align: center;
+            margin-top: 20px; /* Ajuste conforme necessário para afastar do menu */
+        }
+        .ofertas-meio h1 {
+            font-size: 5em; /* Ajuste conforme necessário */
+            margin: 0;
+        }
+
+        /* Adicionar margens inferiores aos itens do carrossel para espaçamento */
+        .carousel-item,
+        .carousel-item-2,
+        .carousel-item-3,
+        .carousel-item-4 {
+            margin-bottom: 50px; /* Ajuste o valor conforme necessário */
+        }
+
+        /* Espaçamento horizontal entre itens do carrossel */
+        .carousel-slide,
+        .carousel-slide-2,
+        .carousel-slide-3,
+        .carousel-slide-4 {
+            display: flex;
+            gap: 20px; /* Ajuste o valor conforme necessário */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="site_supermercado.html"><img src="imagens/62_Sem_Título_20240508093747-removebg-preview.png" alt="Logo do Mercadinho do Seu Zé"></a>
+        </div>
+        <div class="search-bar">
+            <span class="icon">🔍</span>
+            <input type="text" placeholder="   Buscar produtos">
+            <button>Buscar</button>
+            <a href="Paginadelogin.html" class="login-btn">Entre ou Cadastre-se</a>
+            <button class="cart-btn">🛒</button>
+        </div>
+    </header>
+
+    <div class="menu">
+        <a href="#">Ofertas 🔥</a>
+        <a href="#">Limpeza 🧽</a>
+        <a href="#">Higiene 🧼</a>
+        <a href="#">Carnes e Aves 🍖</a>
+        <a href="#">Frios ❄️</a>
+        <a href="#">Frutas 🍇</a>
+        <a href="#">Legumes e verduras 🥕</a>
+        <a href="#">Bebidas 🥂</a>
+    </div><div class="h3-button">
+        <h3><a href="site_supermercado.html" class="home-arrow"><i class="fa-solid fa-house"></i> <i class="fa-solid fa-chevron-right"></i></a> Limpeza</h3>
+        <style>
+            /* Adicionar margem ao título */
+            h3 {
+                margin-top: 100px; /* Ajuste conforme necessário */
+                margin-bottom: 20px; /* Ajuste conforme necessário */
+                display: flex;
+                align-items: center;
+            }
+        
+            /* Estilo para o link e ícones */
+            .home-arrow {
+                margin-right: 10px; /* Espaço entre os ícones e o texto */
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: inherit; /* Mantém a cor do texto */
+            }
+        
+            .home-arrow i {
+                margin-right: px; /* Espaço entre os ícones */
+                margin-left: 50px;
+            }
+        </style>
+    </div>
+
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <div class="carousel-item">
+                <div class="card-venda">
+                    <img src="C:\Users\Desktop\Downloads\_OMO-removebg-preview.png" alt="Produto 1" style="width: 150px; height: auto;">
+                    <p>Omo Lavagem Perfeita - Sabão Líquido, 5L</p>
+                    <div class="descricao">
+                        <span class="preco">R$ 55,00</span>
+                    </div>
+                    <a href="#"><button class="adicionar"><i class="fa-solid fa-cart-shopping fa-xl" style="color: white;"></i> Adicionar </button></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card-venda">
+                    <img src="C:\Users\Desktop\Downloads\imagem_2024-05-22_174140056-removebg-preview.png" alt="Produto 2" style="width: 200px; height: auto;">
+                    <p>Sabão Líquido Omo Pro Lavanderia Concentrado Original Galão 7 L</p>
+                    <div class="descricao">
+                        <span class="preco">R$ 74,95</span>
+                        <span class="desconto">-15%</span>
+                    </div>
+                    <a href="#"><button class="adicionar"><i class="fa-solid fa-cart-shopping fa-xl" style="color: white;"></i> Adicionar </button></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card-venda">
+                    <img src="C:\Users\Desktop\Downloads\imagem_2024-05-22_174720913-removebg-preview.png" alt="Produto 3">
+                    <p>Lã de Aço Bombril Pacote com 60g </p>
+                    <div class="descricao">
+                        <span class="preco">R$ 1,90</span>
+                        <span class="desconto">-10%</span>
+                    </div>
+                    <a href="#"><button class="adicionar"><i class="fa-solid fa-cart-shopping fa-xl" style="color: white;"></i> Adicionar </button></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card-venda">
+                    <img src="imagens/detergente-ype.png" alt="Produto 4">
+                    <p>Detergente Líquido Ypê Neutro Frasco com 500ml</p>
+                    <div class="descricao">
+                        <span class="preco">R$ 1,99</span>
+                        <span class="desconto">-10%</span>
+                    </div>
+                    <a href="#"><button class="adicionar"><i class="fa-solid fa-cart-shopping fa-xl" style="color: white;"></i> Adicionar </button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Carrossel de bebidas-->
+    <div class="carousel-container-2">
+        <div class="h3-button">
+           
+        </div>
+        <div class="carousel-slide-2">
+            <div class="carousel-item-2">
+                <div class="card-venda">
+                    <img src="C:\Users\Desktop\Downloads\imagem_2024-05-22_183256007-removebg-preview.png" alt="Produto 1" style="width: 200px; height: auto;">
+                    <p>Desinfetante Lavanda Sanol 5L</p>
+                    <div class="descricao">
+                        <span class="preco">R$ 9,50</span>
+                        <span class="desconto">-10%</span>
+                    </div>
+                    <a href="#"><button class="adicionar"><i class="fa-solid fa-cart-shopping fa-xl" style="color: white;"></i> Adicionar </button></a>
+                </div>
+            </div>
+            <div class="carousel-item-2">
+                <div class="card-venda">
+                    <img src="C:\Users\Desktop\Downloads\ariel_2_l-removebg-preview.png" alt="Produto 2">
+                    <p>Lava Roupas Ariel Expert com Toque de Downy - 2L</p>
+                    <div class="descricao">
+                        <span class="preco">R$ 34,95</span>
+                        <span class="desconto">-9%</span>
+                    </div>
+                    <a href="#"><button class="adicionar"><i class="fa-solid fa-cart-shopping fa-xl" style="color: white;"></i> Adicionar </button></a>
+                </div>
+            </div>
+            <div class="carousel-item-3">
+                <div class="card-venda">
+                    <img src="C:\Users\Desktop\Downloads\omo_caixa-removebg-preview.png" alt="Produto 2" style="width: 250px; height: auto;">
+                    <p>Lava-roupas em Pó Omo Lavagem Perfeita 400g</p>
+                    <div class="descricao">
+                        <span class="preco">R$ 6,90</span>
+                        <!--<span class="desconto">-5%</span>-->
+                    </div>
+                    <a href="#"><button class="adicionar"><i class="fa-solid fa-cart-shopping fa-xl" style="color: white;"></i> Adicionar </button></a>
+                </div>
+            </div>
+            <div class="carousel-item-3">
+                <div class="card-venda">
+                    <img src="imagens/downy.png" alt="Produto 3">
+                    <p>Amaciante para Roupas Concentrado Downy Brisa de Verão Frasco com 1,5L</p>
+                    <div class="descricao">
+                        <span class="preco">R$ 25,70</span>
+                        <span class="desconto">-4%</span>
+                    </div>
+                    <a href="#"><button class="adicionar"><i class="fa-solid fa-cart-shopping fa-xl" style="color: white;"></i> Adicionar </button></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="carousel-container-4">
+        <div class="h3-button">
+           
+        </div>
+       
+        <div class="carousel-slide-4">
+            <div class="carousel-item-4">
+                <div class="card-venda">
+                    <img src="C:\Users\Desktop\Downloads\imagem_2024-05-22_224232969-removebg-preview.png" alt="Produto 1" style="width: 200px; height: auto;">
+                    <p>Limpador Cremoso Cif Limpeza Profunda Frasco com 250ml </p>
+                    <div class="descricao">
+                        <span class="preco">R$ 7,99</span>
+                        <span class="desconto">-8%</span>
+                    </div>
+                    <a href="#"><button class="adicionar"><i class="fa-solid fa-cart-shopping fa-xl" style="color: white;"></i> Adicionar </button></a>
+                </div>
+            </div>
+            <div class="carousel-item-4">
+                <div class="card-venda">
+                    <img src="C:\Users\Desktop\Downloads\vanish-removebg-preview.png" alt="Produto 2" style="width: 170px; height: auto;">
+                    <p>Tira Manchas Vanish Líquido Multiuso para roupas coloridas Refil Econômico 500ml</p>
+                    <div class="descricao">
+                        <span class="preco">R$ 8,90</span>
+                        <span class="desconto">-2%</span>
+                    </div>
+                    <a href="#"><button class="adicionar"><i class="fa-solid fa-cart-shopping fa-xl" style="color: white;"></i> Adicionar </button></a>
+                </div>
+            </div>
+            <div class="carousel-item-4">
+                <div class="card-venda">
+                    <img src="C:\Users\Desktop\Downloads\peroba-removebg-preview.png" alt="Produto 3"  style="width: 100px; height: auto;">
+                    <p>Lustra moveis peroba lavanda 200ml</p>
+                    <div class="descricao">
+                        <span class="preco">R$ 5,20</span>
+                        <span class="desconto">-5%</span>
+                    </div>
+                    <a href="#"><button class="adicionar"><i class="fa-solid fa-cart-shopping fa-xl" style="color: white;"></i> Adicionar </button></a>
+                </div>
+            </div>
+            <div class="carousel-item-4">
+                <div class="card-venda">
+                    <img src="C:\Users\Desktop\Downloads\raid-removebg-preview.png" alt="Produto 4">
+                    <p>Raid Inseticida Aerossol Multi-Insetos Base Água 420Ml</p>
+                    <div class="descricao">
+                        <span class="preco">R$ 13,90</span>
+                        <span class="desconto">-6%</span>
+                    </div>
+                    <a href="#"><button class="adicionar"><i class="fa-solid fa-cart-shopping fa-xl" style="color: white;"></i> Adicionar </button></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="pagamento">
+                <h3>Formas de Pagamento</h3>
+                <p>Aceitamos cartões de crédito, débito.</p>
+                <img src="imagens/cartões.png" alt="Formas de pagamento">
+            </div>
+            <div class="atendimento">
+                <h3>Atendimento</h3>
+                <a href="#">
+                    <p>Meus pedidos</p>
+                </a>
+                <a href="#">
+                    <p>Central de atendimento</p>
+                </a>
+                <a href="#">
+                    <p>Fale conosco</p> 
+                </a>
+            </div>
+            <div class="redes-sociais">
+                <h3>Redes Sociais</h3>
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f fa-lg"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-lg"></i> </a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-lg" style="color: #E02D69;"></i> </a>
+            </div>
+            <div class="ambiente-seguro">
+                <img src="imagens/ambiente-seguro.png" alt="ambiente-seguro">
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+      
+</body>
+</html>
