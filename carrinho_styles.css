@@ -102,3 +102,8 @@ main {
 .checkout:hover {
     background-color: #f2b705;
 }
+
+.continuar-comprando{
+    text-decoration: none;
+    color: black;
+}
