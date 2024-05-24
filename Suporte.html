@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte</title>
+    <link rel="stylesheet" href="Suporte.css">
+</head>
+<body>
+    <header>
+        <h1>Suporte</h1>
+    </header>
+    
+    <main>
+        <h2>Dúvidas Frequentes</h2>
+        <div class="faq-container">
+            <!-- Repita o bloco abaixo para cada pergunta -->
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(0)">
+                    <span>Pergunta 1</span>
+                    <span class="arrow">&#x25BC;</span>
+                </div>
+                <div class="faq-answer" id="answer-0">
+                    <p>Texto explicativo para a pergunta 1.</p>
+                </div>
+            </div>
+            <!--  adicionar perguntas aqui -->
+            <!-- Exemplo para segunda pergunta -->
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(1)">
+                    <span>Pergunta 2</span>
+                    <span class="arrow">&#x25BC;</span>
+                </div>
+                <div class="faq-answer" id="answer-1">
+                    <p>Texto explicativo para a pergunta 2.</p>
+                </div>
+            </div>
+            <!-- Adicione mais 16 perguntas da mesma maneira -->
+        </div>
+    </main>
+
+    <script src="Suporte.js"></script>
+</body>
+</html>
