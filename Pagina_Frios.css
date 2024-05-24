@@ -333,7 +333,7 @@
     }
 
     h3 {
-        color: var(--cor2);
+        color: var(--cor4);
         font-size: 20px;
         margin-top: 80px;
         margin-bottom: 20px;
@@ -461,8 +461,9 @@
     }
 
     .home-arrow{
-        text-decoration: none;
-        color: var(--cor2);
+        text-decoration:none
+        color var(--cor4)
+        
     }
     .teste-margin{
         margin-top: 50px;
