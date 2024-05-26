@@ -225,3 +225,16 @@ function login() {
 }
 
 }
+//Suporte
+function toggleAnswer(index) {
+    const answer = document.getElementById(`answer-${index}`);
+    const faqItem = answer.parentElement;
+    
+    if (answer.style.display === 'block') {
+        answer.style.display = 'none';
+        faqItem.classList.remove('open');
+    } else {
+        answer.style.display = 'block';
+        faqItem.classList.add('open');
+    }
+}
