@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalização de Compra</title>
+    <link rel="stylesheet" href="pagamento_styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Finalização de Compra</h1>
+        
+        <div class="payment-method">
+            <h2>Selecione o Método de Pagamento</h2>
+            <div class="payment-options">
+                <label>
+                    <input type="radio" name="payment-method" value="cartao" checked>
+                    Cartão de Crédito
+                </label>
+                <label>
+                    <input type="radio" name="payment-method" value="pix">
+                    Pix
+                </label>
+            </div>
+        </div>
+        
+        <div id="cartao-form">
+            <h3>Dados do Cartão</h3>
+            <form action="finalização.compras.html">
+                <label for="card-name">Nome no Cartão:</label>
+                <input type="text" id="card-name" name="card-name" required>
+                
+                <label for="card-number">Número do Cartão:</label>
+                <input type="text" id="card-number" name="card-number" required>
+                
+                <label for="expiry-date">Data de Validade:</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/AA" required>
+                
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+                
+                <button type="submit" id="finalizar-compra">Finalizar Compra</button>
+                
+            </form>
+        </div>
+        
+        <div id="pix-form" style="display: none;">
+            <h3>Pagamento via Pix</h3>
+            <p>Utilize o QR code abaixo para realizar o pagamento.</p>
+            <img src="qrcode.png" alt="QR code Pix">
+        </div>
+    </div>
+
+    <script src="pagamento_script.js"></script>
+</body>
+</html>
