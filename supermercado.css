@@ -66,6 +66,10 @@
         margin-right: 10px;
     }
 
+    .carrinho{
+        padding-left: 10px;
+    }
+
     .login-btn, .cart-btn {
         padding: 10px 20px;
         background-color: #fdfdfd;
